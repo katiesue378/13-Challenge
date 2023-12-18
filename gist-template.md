@@ -6,6 +6,7 @@ Regular expressions (regex) are the devices used as a search pattern and are mad
 
 This template explains the pieces that are put together to match an username using a regular expression. /^[a-z0-9_-]{3,16}$/
 
+The regex has to be wrapped within slashes (/).
 
 ## Table of Contents
 
@@ -54,20 +55,46 @@ For example: (cat):(dog) could be written with the OR operator making it (c|a|t)
 
 ### Character Classes
 
+The Character Classes are the parts of the regex that describe what type of characters will potentially be included.
+
 ### Flags
+
+Outside of the slash characters, at the end of the regex, a flag may be placed. Flags define additional functionality or limits of the regex. There are a total of 6 optional flags and they can be used concurrently or by themselves and have no ordering rules.
+
+Common flags are: g - Global Search, i - Case insensitive search, and m - Multi-line search.
 
 ### Grouping and Capturing
 
+Grouping and Capturing allows sections of the regex to be broken up to be checked for different constructs.
+
+Typically you would group a section of the regex with parentheses (()) with each section within parentheses being subexpressions.
+
 ### Bracket Expressions
+
+Bracket Expressions are anything set inside a set of square brackets ([]).
 
 ### Greedy and Lazy Match
 
+Greedy would be the longest string match.
+
+Lazy is the shortest string match.
+
 ### Boundaries
+
+Boundaries can be found in the code by looking for the (\b). Essentially it tells the user that there is a word boundary in place.
 
 ### Back-references
 
+Back-references are commands which refer to something that has already happened or was a match to part of the regex.
+
 ### Look-ahead and Look-behind
+
+Look-ahead and Look-behind are also known as look around assertions and are similar to an anchor in that they search for a match. The difference is they can look around and match characters.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Hi, my name is Katie Marshall. I am just starting my journey as a software developer and I am really enjoying all that it entails. 
+
+![Alt text](<images/Katie Marshall.png>)
+
+https://github.com/katiesue378
